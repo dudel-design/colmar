@@ -1,17 +1,113 @@
+/* Universal Styles */
+
+html {
+  font-family: "Helvetica", sans-serif;
+  font-size: 18px;
+  background-color: white;
+}
+
+body {
+  line-height: 1.4;
+  color: darkgrey;
+}
+
+h1  {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h3  {
+  font-size: 1.8rem;
+}
+
+.container  {
+display: flex;
+flex-direction: row;
+  border-style: solid;
+  border-color: red;
+  border-width: thin;
+  max-width:100%;
+}
+
+.main-image  {
+  border-style: solid;
+  border-color: red;
+  border-width: thin;
+
+}
+
+
+
+
+
+
 /*Header*/
 
-
-
+#header  {
+  height: 64px;
+}
+nav  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 /* Logo */
 
 
 /* Navigation Bar */
+nav li {
+  display: inline;
+  padding: 0 1rem;
+}
 
 /*Main Banner*/
+.banner-container  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightgray;
+}
 
+.main-image  {
+  max-width: 60%;
+  padding: 32px 24px;
+}
+.banner-container img {
+max-width: 100%;
+max-height: auto;
+}
 
+.banner-words  {
+  display: flex;
+  flex-direction: column;
+  align-items:  flex-start;
+  justify-content: space-between
+  /* width: 30%; */
+
+}
+
+button {
+  width: 60%;
+  font-size: 1.8rem;
+  background-color: darkgrey;
+  color:white;
+}
 
 /*Orientation, About Us and Lectures*/
+.primary-container  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.secondary-container  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
 
 
 
