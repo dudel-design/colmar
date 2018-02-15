@@ -1,3 +1,33 @@
+
+
+
+/*COLOR PALLETTE:
+
+FRESH #F7F5E6 Light color
+VERMILLION #333A56 Darkest colour
+SUNSHINE #52658F Mid colour
+CLEAN #E8E8E8 greyish colour
+*/
+
+/*FONTS:
+
+Google DOSIS and OPEN sans
+*/
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v7/HhyaU5sn9vOmLzloC_U.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /* Universal Styles */
 
 html {
@@ -8,30 +38,43 @@ html {
 
 body {
   line-height: 1.4;
-  color: #696969;
+  color: rgb(86, 100,116);
+  margin:0.05rem;
 }
 
 h1  {
   font-size: 2.5rem;
-  font-weight: 900;
+  font-weight: 400;
+  color: #000000;
+  font-family: "Open Sans";
 }
 
 h2  {
   font-size: 2rem;
   font-weight: 600;
+  color: #333A56;
+  font-family: "dosis";
 }
 
 h3  {
   font-size: 1.5rem;
+    font-weight: normal;
+    color: #52658F;
+    font-family: "Open Sans";
+}
+
+h4  {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333A56;
+  font-family: "dosis";
+
 }
 
 .row-container  {
 display: flex;
 flex-direction: row;
 justify-content:space-between;
-  border-style: solid;/*TEMP*/
-  border-color: red;/*TEMP*/
-  border-width: thin;/*TEMP*/
 max-width:100%;
 }
 
@@ -39,10 +82,7 @@ max-width:100%;
   display: flex;
   flex-direction: column;
   justify-content:center;
-    border-style: solid;/*TEMP*/
-    border-color: green;/*TEMP*/
-    border-width: thin;/*TEMP*/
-    max-width:100%;
+  max-width:100%;
 }
 
 .tile-container  {
@@ -50,59 +90,61 @@ max-width:100%;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content:space-between;
-    border-style: solid;/*TEMP*/
-    border-color: green;/*TEMP*/
-    border-width: thin;/*TEMP*/
-    max-width:100%;
-}
-
-.main-image  {
-  border-style: solid;/*TEMP*/
-  border-color: red;/*TEMP*/
-  border-width: thin;/*TEMP*/
-}
-
-.primary-container,
-.banner-container,
-.banner-words  {
-  border-style: solid;/*TEMP*/
-  border-color: blue;/*TEMP*/
-  border-width: thin;/*TEMP*/
-
-}
-
-.tiles,
-.thumb-container  {
-  border-style: solid;/*TEMP*/
-  border-color: Gold;/*TEMP*/
-  border-width: thin;/*TEMP*/
+  max-width:100%;
 }
 
 
+a:link  {
+  color:#52658F;
+  text-decoration: none;
+}
 
+a:visited  {
+  color:#333A56;
+  font-style: italic;
+}
 /*Header*/
 
-#header  {
-  height: 64px;
-}
 nav  {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 64px;
+
+
 }
 /* Logo */
+.logo  {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding-left: 1.33rem;
 
+}
+
+b  {
+  font-weight: bold;
+  color: #52658F;
+}
 
 /* Navigation Bar */
 nav li {
   display: inline;
-  padding: 0 1rem;
+  padding-right: 0.88rem;
+  color: #52658F;
+  font-weight: bold;
+  font-family: "Dosis";
+}
+
+.menu  {
+
+  padding-right: 0.44rem;
 }
 
 /*Main Banner*/
 
 #banner {
-  background-color: #c0c0c0;
+  background-color: #E8E8E8;
 }
 
 .main-words  {
@@ -110,6 +152,8 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 width: 40%;
+margin-left: 1.33rem;
+/* margin-right: 0.97rem; */
 }
 
 .banner-container  {
@@ -136,24 +180,19 @@ height: 100%;
   align-items: flex-start;
   justify-content: space-between;
   width: auto;
-
-
-
-  /* width: 30%; */
-
 }
 
 button {
-  width: 60%;
-  font-size: 1.8rem;
-  background-color: darkgrey;
-  color:white;
-  align-self: center;
+  width: 80%;
+  font-size: 1.5rem;
+  background-color: #52658F;
+  color:#F7F5E6;
+  align-self: left;
+border-width: 0.44rem;
+border-color: #52658F;
+border-style: solid;
+font-family: "Dosis";
 }
-
-
-
-
 
 /*Orientation, About Us and Lectures*/
 .primary-container  {
@@ -162,28 +201,14 @@ button {
   /* align-items: center; */
   justify-content: space-between;
   width: 60%;
+  margin: 1.77rem 1.33rem;
 }
 
-.main-primary-image  {
-  margin:32px 24px;
-}
+
 .main-primary-image img {
 width: 100%;
-height: 100%;
+height: auto;
 }
-
-
-
-/* .primary-container img {
-max-width: 100%;
-max-height: auto;
-} */
-
-/* .main-container img  {
-  width: 100%;
-  max-height: auto;
-
-} */
 
 .secondary-container  {
   display: flex;
@@ -191,55 +216,81 @@ max-height: auto;
   align-items: flex-start;
   justify-content: flex-start;
   width: 40%;
+  margin: 0 0 0 1.33rem;
 }
 
 .thumb-container  {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 16px;
+  padding: 0.88rem;
+  margin: 0.05rem;
+  border-style: solid;
+  border-color: #E8E8E8;
+  border-width: thin;
 }
 
 .thumb-container img  {
+  height: auto;
+  padding: 0.88rem 0.88rem;
   width: 35%;
   height: auto;
-  padding: 16px 16px;
 }
 
 
 
 
 /*Subjects*/
-
 .title  {
  text-align: center;
 }
-
 
 .tile-container  {
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-
+margin: auto 56px;
 }
 
 .tiles  {
-width: 33%;
-
-
+max-width: 30%;
+margin: 16px;background-color: white;
 }
 
 .tiles img  {
   height: auto;
   width: 100%;
+  padding-bottom: 16px;
+}
+.tile-words  {
+  padding: 0.88rem;
 }
 
 #learning  {
-  background-color: #dcdcdc;
+  background-color: #52658F;
+  padding: 32px 40px;
+  margin-top: 0.88rem;
+}
+
+#learning h2  {
+color: #F7F5E6;
 }
 
 
 /*Thesis*/
+#thesis  {
+
+  background-color: #F7F5E6;
+
+}
+#thesis .title  {
+margin: 1.77rem auto;
+
+}
+
+video  {
+  padding: 0 1.33rem 1.33rem 0;
+}
 
 
 
@@ -250,9 +301,21 @@ footer  {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #333A56;
+  color: white;
+  padding:0.88rem 1.33rem;
 }
 
 footer li {
   display: inline;
   padding: 0 1rem;
+}
+
+footer a:link  {
+  color: #F7F5E6;
+  text-decoration: none;
+}
+
+footer a:visited  {
+  color:  #E8E8E8;
 }

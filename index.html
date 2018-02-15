@@ -2,29 +2,33 @@
 <html>
 <head>
   <title>Colmar Academy</title>
-  <link rel="stylesheet" href="./resources/css/reset.css">
-  <link rel="stylesheet" href="./resources/css/style.css">
+  <link rel="stylesheet" href="./resources/css/reset.css"/>
+  <link rel="stylesheet" href="./resources/css/style.css"/>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Open+Sans:400,700" rel="stylesheet"> -->
 </head>
 <body>
   <!--Header-->
-  <nav class="container" id="header">
+  <nav id="header">
 
     <!--Logo-->
-    <div>
-      <img src="#" />
-      <span><em>COLMAR</em>ACADEMY</span>
+
+    <div class="logo">
+      <img src="resources/images/ic-logo.svg"/>
+      <span><b>COLMAR</b>ACADEMY</span>
     </div>
+
 
     <!--Navigation Bar-->
     <div class="menu">
       <ul>
-        <li>On Campus</li>
-        <li>Online</li>
-        <li>For companies</li>
-        <li>Sign in</li>
+        <li><a href="#">On Campus</a></li>
+        <li><a href="#">Online</a></li>
+        <li><a href="#">For companies</a></li>
+        <li><a href="#">Sign in</a></li>
       </ul>
     </div>
   </nav>
+
   <div class="body-container">
 
     <!--Main Banner-->
@@ -36,15 +40,15 @@
         <!-- "resources/images/banner.jpg" alt="Group of students studying" -->
       </div>
       <div class="main-words">
-        <h1>Learn something </br>new everyday</h1>
-        <h3>"Lorem ipsum dolor sit amet, consectetur adipisicing elit."</h3>
+        <h1>Learn something </br>new everyday</h1></br>
+        <h3>"Lorem ipsum dolor sit amet, consectetur adipisicing elit."</h3></br>
         <button href="#">Start here</button>
       </div>
       <!-- </div> -->
     </div>
 
     <!--Orientation, About Us and Lectures-->
-    <div class="row-container">
+    <div class="row-container" id="about">
       <div class="primary-container">
         <div class="main-primary-image">
           <img src="resources/images/information-main.jpg" alt="Person reading outside"/>
@@ -52,9 +56,9 @@
           <!--"resources/images/information-main.jpg" alt="Person reading"-->
         </div>
         <div class="banner-words">
-          <h2 id="practice">It doesn't hurt to keep practicing</h2>
-          <h4>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</h4>
-          <h4>Emanuel, Snr Strategist at Hiring.com</h4>
+          <h2 id="practice">It doesn't hurt to keep practicing</h2></br>
+          <h4>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</h4></br></br>
+          <h4><b>Emanuel, Snr Strategist at Hiring.com</b></h4>
         </div>
       </div>
 
@@ -98,52 +102,81 @@
       </div>
 
       <div class="tile-container">
+
         <div class="tiles">
-          <img src="resources/images/course-software.jpg"/>
-          <h3>Software Engineering</h3>
-          <h4>COURSES</h4>
+          <div class="image-holder"><img src="resources/images/course-software.jpg"/>
+          </div>
+          <div class="tile-words">
+          <h3>Software Engineering</h3></br>
+          <h4>COURSES</h4></br>
           <h4>Web Development, Mobile Development, iOT, API's</h4>
         </div>
+        </div>
 
         <div class="tiles">
+          <div class="image-holder"><img
           <img src="resources/images/course-computer-art.jpg"/>
-          <h3>Computer Art</h3>
-          <h4>COURSES</h4>
+        </div>
+        <div class="tile-words">
+
+          <h3>Computer Art</h3></br>
+          <h4>COURSES</h4></br>
           <h4>Imaging & Design, Web Design, Motion Graphics & Visual Affects, Computer Animation</h4>
         </div>
+      </div>
 
         <div class="tiles">
+          <div class="image-holder"><img
           <img src="resources/images/course-design.jpg"/>
-          <h3>Design</h3>
-          <h4>COURSES</h4>
+        </div>
+        <div class="tile-words">
+
+          <h3>Design</h3></br>
+          <h4>COURSES</h4></br>
           <h4>User Experience Design, User Research, Visual Design</h4>
         </div>
+      </div>
 
         <div class="tiles">
+          <div class="image-holder"><img
           <img src="resources/images/course-data.jpg"/>
-          <h3>Data</h3>
-          <h4>COURSES</h4>
+        </div>
+        <div class="tile-words">
+
+          <h3>Data</h3></br>
+          <h4>COURSES</h4></br>
           <h4>Data Science, Big Data, SQL, Data Vizualization</h4>
         </div>
+      </div>
 
         <div class="tiles">
+          <div class="image-holder"><img
           <img src="resources/images/course-business.jpg"/>
-          <h3>Business</h3>
-          <h4>COURSES</h4>
+        </div>
+        <div class="tile-words">
+
+          <h3>Business</h3></br>
+          <h4>COURSES</h4></br>
           <h4>Product Development, Busness Development, Startup</h4>
         </div>
+      </div>
 
         <div class="tiles">
+          <div class="image-holder"><img
           <img src="resources/images/course-marketing.jpg"/>
-          <h3>Marketing</h3>
-          <h4>COURSES</h4>
+        </div>
+        <div class="tile-words">
+
+          <h3>Marketing</h3></br>
+          <h4>COURSES</h4></br>
           <h4>Analystics, Content Marketing, Mobile Marketing</h4>
+        </div>
         </div>
       </div>
     </div>
 
     <!--Thesis-->
-    <div class="column-container">
+    <div class="column-container" id="thesis">
       <div class="title">
         <h2>Thesis exhibit</h2>
       </div>
@@ -157,17 +190,24 @@
               <h2>Reimagine urban</h2>
               <h4>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</h4>
             </div>
-            <div class="secondary-container">
+
+
+
+<div class="secondary-container">
               <div class="thumb-container">
                 <img src="resources/images/thesis-fisma.jpg"/>
+                <div class="thumb-words">
                 <h3>Fisma: Design and Prototype</h3>
                 <h4>Designer showcase of new prototype product</h4>
+              </div>
               </div>
 
               <div class="thumb-container">
                 <img src="resources/images/thesis-now-and-then.jpg"/>
+                <div class="thumb-words">
                 <h3>Now and then</h3>
                 <h4>Research study about New York</h4>
+              </div>
               </div>
             </div>
           </div>
@@ -180,7 +220,7 @@
         </div>
         <div class="terms">
           <ul>
-            <li<a href="#">Terms</a></li>
+            <li><a href="#">Terms</a></li>
             <li><a href="#">Privacy</a></li>
           </ul>
         </div>
