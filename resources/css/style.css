@@ -20,24 +20,58 @@ h3  {
   font-size: 1.8rem;
 }
 
-.container  {
+.row-container  {
 display: flex;
 flex-direction: row;
-  border-style: solid;
-  border-color: red;
-  border-width: thin;
-  max-width:100%;
+justify-content:space-between;
+  border-style: solid;/*TEMP*/
+  border-color: red;/*TEMP*/
+  border-width: thin;/*TEMP*/
+max-width:100%;
+}
+
+.column-container  {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+    border-style: solid;/*TEMP*/
+    border-color: green;/*TEMP*/
+    border-width: thin;/*TEMP*/
+    max-width:100%;
+}
+
+.tile-container  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+    border-style: solid;/*TEMP*/
+    border-color: green;/*TEMP*/
+    border-width: thin;/*TEMP*/
+    max-width:100%;
 }
 
 .main-image  {
-  border-style: solid;
-  border-color: red;
-  border-width: thin;
+  border-style: solid;/*TEMP*/
+  border-color: red;/*TEMP*/
+  border-width: thin;/*TEMP*/
+}
+
+.primary-container,
+.banner-container,
+.banner-words  {
+  border-style: solid;/*TEMP*/
+  border-color: blue;/*TEMP*/
+  border-width: thin;/*TEMP*/
 
 }
 
-
-
+.tiles,
+.thumb-container  {
+  border-style: solid;/*TEMP*/
+  border-color: Gold;/*TEMP*/
+  border-width: thin;/*TEMP*/
+}
 
 
 
@@ -61,6 +95,15 @@ nav li {
 }
 
 /*Main Banner*/
+
+.main-words  {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-between;
+width: 40%;
+}
+
 .banner-container  {
   display: flex;
   align-items: center;
@@ -69,19 +112,24 @@ nav li {
 }
 
 .main-image  {
-  max-width: 60%;
-  padding: 32px 24px;
+  width: 60%;
 }
-.banner-container img {
+
+
+/* .banner-container img {
 max-width: 100%;
 max-height: auto;
-}
+} */
 
 .banner-words  {
   display: flex;
   flex-direction: column;
-  align-items:  flex-start;
-  justify-content: space-between
+  align-items: flex-start;
+  justify-content: space-between;
+  width: auto;
+
+
+
   /* width: 30%; */
 
 }
@@ -91,22 +139,39 @@ button {
   font-size: 1.8rem;
   background-color: darkgrey;
   color:white;
+  align-self: center;
 }
+
+
+
+
 
 /*Orientation, About Us and Lectures*/
 .primary-container  {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
+  width: 60%;
+}
+
+.primary-container img {
+max-width: 100%;
+max-height: auto;
 }
 
 .secondary-container  {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 40%;
+}
+
+.thumb-container  {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  width: 60%;
 }
 
 
@@ -114,7 +179,23 @@ button {
 
 /*Subjects*/
 
+.title  {
+ text-align: center;
+}
 
+
+.tile-container  {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+
+.tiles  {
+width: 33%;
+
+
+}
 
 
 /*Thesis*/
@@ -123,3 +204,14 @@ button {
 
 
 /*Footer*/
+
+footer  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer li {
+  display: inline;
+  padding: 0 1rem;
+}
