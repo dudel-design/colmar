@@ -71,6 +71,12 @@ h4  {
 
 }
 
+em {
+  font-style: italic;
+    font-size: 0.8rem;
+        font-family: "Open Sans";
+}
+
 .row-container  {
 display: flex;
 flex-direction: row;
@@ -109,7 +115,7 @@ nav  {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: 3.555556rem;
 
 
 }
@@ -117,8 +123,8 @@ nav  {
 .logo  {
   display: inline-flex;
   align-items: center;
-  height: 32px;
-  padding-left: 1.33rem;
+  height: 1.77778rem;
+  padding-left: 1.33334rem;
 
 }
 
@@ -130,15 +136,34 @@ b  {
 /* Navigation Bar */
 nav li {
   display: inline;
-  padding-right: 0.88rem;
+  padding-right: 0.8889rem;
   color: #52658F;
   font-weight: bold;
   font-family: "Dosis";
 }
 
+nav ul li:last-child {
+  background-color:#52658F ;
+  color: white;
+}
+
+/* nav ul li a:last-child  {
+  color: white;
+} */
+
+nav li:hover  {
+  background-color:#52658F ;
+}
+
+nav ul li a:hover  {
+  color: white;
+}
+
+
 .menu  {
 
   padding-right: 0.44rem;
+  text-align: center;
 }
 
 /*Main Banner*/
@@ -165,7 +190,7 @@ margin-left: 1.33rem;
 
 .main-image  {
   width: 60%;
-  margin: 32px 24px;
+  margin: 1.77778rem 1.33333rem;
 }
 
 
@@ -188,10 +213,20 @@ button {
   background-color: #52658F;
   color:#F7F5E6;
   align-self: left;
-border-width: 0.44rem;
+  padding: 0.4444rem;
+border-width: 0.1rem;
 border-color: #52658F;
 border-style: solid;
 font-family: "Dosis";
+}
+
+button:hover  {
+background-color: #E8E8E8;
+color: #52658F;
+border-style: solid;
+border-color: #52658F;
+transition:background-color 3s linear, color 1s linear, border-color 3s linear;
+
 }
 
 /*Orientation, About Us and Lectures*/
@@ -216,7 +251,11 @@ height: auto;
   align-items: flex-start;
   justify-content: flex-start;
   width: 40%;
-  margin: 0 0 0 1.33rem;
+  margin: 1.3333rem 0 0 1.3333rem;
+}
+
+#about .secondary-container .thumb-container:last-child  {
+  background-color: #E8E8E8;
 }
 
 .thumb-container  {
@@ -230,6 +269,11 @@ height: auto;
   border-width: thin;
 }
 
+.thumb-container:hover  {
+  background-color: #E8E8E8;
+  transition: background-color 1s ease;
+}
+
 .thumb-container img  {
   height: auto;
   padding: 0.88rem 0.88rem;
@@ -237,8 +281,10 @@ height: auto;
   height: auto;
 }
 
-
-
+.thumb-words h3,
+.thumb-words p {
+  margin: 0.444445rem auto;
+}
 
 /*Subjects*/
 .title  {
@@ -249,51 +295,59 @@ height: auto;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-margin: auto 56px;
+margin: 1.77778rem 3.11112rem;
 }
 
 .tiles  {
 max-width: 30%;
-margin: 16px;background-color: white;
+margin: 0.8888rem;
+background-color: white;
 }
 
 .tiles img  {
   height: auto;
   width: 100%;
-  padding-bottom: 16px;
+  padding-bottom: 0.8888rem;
 }
 .tile-words  {
-  padding: 0.88rem;
+  padding: 0.8888rem;
+}
+
+.tiles:hover  {
+  background-color:#F7F5E6;
+  transition: background-color 1.5s ease-in-out;
 }
 
 #learning  {
   background-color: #52658F;
-  padding: 32px 40px;
-  margin-top: 0.88rem;
+  padding: 1.77778rem 2.222222rem;
+  /* margin-top: 0.88rem; */
 }
 
 #learning h2  {
 color: #F7F5E6;
 }
 
-
 /*Thesis*/
 #thesis  {
-
   background-color: #F7F5E6;
-
 }
-#thesis .title  {
-margin: 1.77rem auto;
 
+#thesis .title  {
+margin-top:  1.77rem;
+}
+
+#thesis .secondary-container .thumb-container:first-child  {
+  background-color: #E8E8E8;
 }
 
 video  {
   padding: 0 1.33rem 1.33rem 0;
 }
 
-
-
+#video-words h2  {
+  padding: 1.3333rem auto 0.4444rem auto;
+}
 
 /*Footer*/
 
