@@ -100,10 +100,11 @@ max-width:100%;
 }
 
 
-a:link  {
+/* a:link  {
   color:#52658F;
   text-decoration: none;
-}
+  text-align: center;
+} */
 
 a:visited  {
   color:#333A56;
@@ -115,7 +116,8 @@ nav  {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 3.555556rem;
+  height: 1.77778rem;
+  margin: 1.7778rem 0.4444rem 1.7778rem 1.7778rem;
 
 
 }
@@ -124,7 +126,7 @@ nav  {
   display: inline-flex;
   align-items: center;
   height: 1.77778rem;
-  padding-left: 1.33334rem;
+  /* margin-left: 1.33334rem; */
 
 }
 
@@ -135,35 +137,39 @@ b  {
 
 /* Navigation Bar */
 nav li {
-  display: inline;
-  padding-right: 0.8889rem;
+  display: inline-block;
+  padding: 0.2rem;
   color: #52658F;
   font-weight: bold;
   font-family: "Dosis";
+  margin-right: 0.88889rem;
+  border-radius: 5%;
+
 }
 
-nav ul li:last-child {
+
+
+.menu li:last-child {
   background-color:#52658F ;
-  color: white;
-}
+  }
 
-/* nav ul li a:last-child  {
-  color: white;
-} */
-
-nav li:hover  {
+.menu li:hover  {
   background-color:#52658F ;
 }
 
-nav ul li a:hover  {
-  color: white;
+
+
+.menu a:hover  {
+    color: #F7F5E6;
 }
+
+
 
 
 .menu  {
 
   padding-right: 0.44rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 /*Main Banner*/
@@ -181,12 +187,6 @@ margin-left: 1.33rem;
 /* margin-right: 0.97rem; */
 }
 
-.banner-container  {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: lightgray;
-}
 
 .main-image  {
   width: 60%;
